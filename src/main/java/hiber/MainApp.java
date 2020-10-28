@@ -18,7 +18,7 @@ public class MainApp {
 
       userService.add(new User("User1", "Lastname1", "user1@mail.ru", new Car("mazda", 3)));
       userService.add(new User("User2", "Lastname2", "user2@mail.ru", new Car("Lada", 2111)));
-      userService.add(new User("User3", "Lastname3", "user3@mail.ru", new Car("Porshe", 911)));
+      userService.add(new User("User3", "Lastname3", "user3@mail.ru", new Car("Porsche", 911)));
       userService.add(new User("User4", "Lastname4", "user4@mail.ru", new Car("Nava", 3121)));
 
       List<User> users = userService.listUsers();
@@ -29,8 +29,9 @@ public class MainApp {
          System.out.println("Email = "+user.getEmail());
          System.out.println("Car = " + user.getCar());
          System.out.println();
-//         System.out.println(user);
       }
+
+      System.out.println(userService.findUserCar("Porsche", 911));
 
       context.close();
    }

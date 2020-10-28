@@ -1,11 +1,6 @@
 package hiber.model;
 
-import com.sun.javafx.binding.StringFormatter;
-import org.hibernate.usertype.UserType;
-import org.springframework.stereotype.Component;
-
 import javax.persistence.*;
-
 
 @Entity
 @Table(name = "cars")
